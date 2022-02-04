@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Esta funcion  imprime un texto con printf seguido de una línea
+ * main - function main
  * Return: 1 always
  */
 
