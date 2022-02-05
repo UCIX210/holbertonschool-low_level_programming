@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - Prints a text according number
+ * main - The lasts digit
  *
- * Return: Always (Success)
+ * Return: 0 Always 
  */
 int main(void)
 {
 	int n, lastDigit;
-
+    
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastDigit = n % 10;
