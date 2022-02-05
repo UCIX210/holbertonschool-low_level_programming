@@ -1,30 +1,25 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - random numbers, negative or positive
+ * main - prints alphabet
  *
  * Return: 0 Always
  */
 int main(void)
 {
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	char l;
 
-	if (n > 0)
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		printf("%d is positive\n", n);
+		putchar(letter);
 	}
-	else if (n == 0)
+	for (l = 'A'; letter <= 'Z'; l++)
 	{
-		printf("%d is zero\n", n);
+		putchar(l);
 	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
-
+	putchar('\n');
 	return (0);
 }

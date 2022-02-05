@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - prints alphabet in order
+ * main - print alphabet
  *
- * Return: Always 0.
+ * Return: 0 Always
  */
 int main(void)
 {
