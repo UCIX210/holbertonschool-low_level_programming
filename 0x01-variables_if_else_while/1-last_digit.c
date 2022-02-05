@@ -1,29 +1,32 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - random numbers, negative or positive
+ * main - Prints a text according number
  *
- * Return: 0 Always
+ * Return: Always (Success)
  */
+
 int main(void)
 {
-	int n;
+	int n, lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	lastDigit = n % 10;
 
-	if (n > 0)
+	if (lastDigit > 5)
 	{
-		printf("%d is positive\n", n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
 	}
-	else if (n == 0)
+	else if (lastDigit == 0)
 	{
-		printf("%d is zero\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
 	}
-	else
+	else if (lastDigit < 6 && lastDigit != 0)
 	{
-		printf("%d is negative\n", n);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
 	}
 
 	return (0);
