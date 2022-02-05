@@ -1,30 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
- * main - random numbers, negative or positive
- *
- * Return: 0 Always
- */
+  * main - hexadecimal
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int n;
+	char n, l;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
 
-	if (n > 0)
+	for (l = 'a'; l <= 'f'; l++)
 	{
-		printf("%d is positive\n", n);
+		putchar(l);
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+
+	putchar('\n');
 
 	return (0);
 }
