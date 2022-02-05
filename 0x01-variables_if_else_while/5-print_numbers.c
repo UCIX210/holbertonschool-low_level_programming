@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - random numbers, negative or positive
+ * main - 0 to 10
  *
  * Return: 0 Always
  */
@@ -14,5 +14,6 @@ int main(void)
 	{
 		printf("%d", i);
 	}
+	printf("\n");
 	return (0);
 }
