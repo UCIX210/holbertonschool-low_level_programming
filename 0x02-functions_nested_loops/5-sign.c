@@ -1,10 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - 0 to 10
- *
- * Return: 0 Always
+ * print_sign - imprime el signo
+ * @c: variable a chequear
+ * Return:  1==letra else - 0
  */
-int main(void)
+int print_sign(int n)
 {
-
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
