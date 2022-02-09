@@ -1,11 +1,15 @@
 #include <stdio.h>
 /**
- * main - alphabet mirror
+ * print_last_digit - ultomo digito absoluto
  *
- * Return: Always 0.
+ * Return: Always n
  */
-int main(void)
+int print_last_digit(int n)
 {
-
-
+	if (n < 0)
+	{
+		n = abs(n);
+	}
+    n = n % 10;
+	return (n);
 }
