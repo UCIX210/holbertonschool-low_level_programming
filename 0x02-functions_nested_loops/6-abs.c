@@ -1,9 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 /**
-  * main - 0 to 9 with putchar
-  *
-  * Return: Always (Success)
-  */
-int main(void)
+ * print_sign - numero absoluto
+ * @n: variable a chequear
+ * Return: n
+ */
+int _abs(int n)
 {
+	n = abs(n);
 
+	return (n);
+}
