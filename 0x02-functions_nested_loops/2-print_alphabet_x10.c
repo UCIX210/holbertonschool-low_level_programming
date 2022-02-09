@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - print alphabet
+ * print_alphabet_x10 - print alphabet 10
  *
  * Return: 0 Always
  */
-int main(void)
+void print_alphabet_x10(void)
 {
     int i;
     char c;
@@ -14,9 +14,9 @@ int main(void)
 
         for (c = 'a'; c < 'z'; c++)
         {
-            putchar(c);
+            _putchar(c);
         }
-        putchar('\n');
+        _putchar('\n');
     }
     
 }
