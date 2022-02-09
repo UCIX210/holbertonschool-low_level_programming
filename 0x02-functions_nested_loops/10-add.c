@@ -1,10 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
-  * main - 0 to 9 with ','
-  *
-  * Return: Always (Success);
+  * add - SUMA
+ * @x: primer numeros
+ * @y: sgundo numero
+  * Return: z =x+y
   */
-int main(void)
+int add(int x, int y)
 {
+	int z;
 
+	z = x + y;
+	return (z);
 }
