@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_last_digit - ultomo digito absoluto
- *
+ * @n: variable a chequear
  * Return: Always n
  */
 int print_last_digit(int n)
@@ -11,7 +11,7 @@ int print_last_digit(int n)
 	{
 		n = abs(n);
 	}
-    n = n % 10;
+	n = n % 10;
 	if (n < 0)
 	{
 		n = abs(n);
