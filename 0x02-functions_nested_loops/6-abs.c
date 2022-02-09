@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * print_sign - numero absoluto
+ * _abs - numero absoluto
  * @n: variable a chequear
  * Return: n
  */
