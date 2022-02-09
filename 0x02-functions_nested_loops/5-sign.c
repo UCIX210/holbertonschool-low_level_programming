@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - imprime el signo
- * @c: variable a chequear
+ * @n: variable a chequear
  * Return:  1==letra else - 0
  */
 int print_sign(int n)
