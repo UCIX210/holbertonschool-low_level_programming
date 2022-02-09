@@ -1,11 +1,17 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - prints alphabet
+ * _islower - minuscula
  *
- * Return: 0 Always
+ * Return: 0 == Mayuscula 1==minuscula
  */
-int main(void)
+int _islower(int c)
 {
-
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
