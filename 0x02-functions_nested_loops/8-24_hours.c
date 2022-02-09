@@ -14,22 +14,22 @@ void jack_bauer(void)
 	{
 		for (m = 0; m < 60; m++)
 		{
-			if (h<10)
+			if (h <10)
 			{
-				printf("0%d", h);
+				printf("0%d" , h);
 			}
 			else
 			{
 				printf("%d", h);
 			}
 			printf(":");
-			if (m<10)
+			if (m < 10)
 			{
 				printf("0%d", m);
 			}
 			else
 			{
-				printf("%d",m);
+				printf("%d" , m);
 			}
 			printf("\n");
 		}
