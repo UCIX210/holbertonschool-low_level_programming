@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _isdigit - minuscula
+ * _isdigit - Devuleve 1 si es digito
  * @c: variable a chequear
- * Return: 0 == Mayuscula 1==minuscula
+ * Return: 1 == Digito 
  */
 int _isdigit(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (c >= '1' && c <= '9')
 	{
 		return (1);
 	}
