@@ -1,34 +1,34 @@
 #include "main.h"
 #include <stdio.h>
 /**
-  * times_table - multiplicas
-  *
+  * print_square - prints a square
+  * @size: caudaro nuemros
   * Return: void
   */
-void times_table(void)
+void print_square(int size)
 {
-	int a;
-	int b;
-	int c;
+	int i;
+	int j;
+	int array[size];
 
-	for (a = 0; a <= 9; a++)
+	if (size > 0)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		for (j = 0; j < size; j++)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
+			for (i = 0; i < size; i++)
 			{
-				putchar(' ');
-		}
-			else
-			{
-				putchar((c / 10) + '0');
+				array[i] = '#';
 			}
-			putchar((c % 10) + '0');
+			for (i = 0; i < size; i++)
+			{
+				_putchar(array[i]);
+			}
+			_putchar('\n');
 		}
+	}
+	else
+	{
 		putchar('\n');
 	}
 }
+
