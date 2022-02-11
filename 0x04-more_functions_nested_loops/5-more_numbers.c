@@ -6,7 +6,7 @@
   */
 void more_numbers(void)
 {
-    int i;
+	int i;
 	int c;
 	int l;
 
@@ -17,9 +17,9 @@ void more_numbers(void)
 		{
 			if (i == 10)
 			{
-				c=48;
+				c = 48;
 			}
-			if (i>9)
+			if (i > 9)
 			{
 				_putchar('1');
 			}
