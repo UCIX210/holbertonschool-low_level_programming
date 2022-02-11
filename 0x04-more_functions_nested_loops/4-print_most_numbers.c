@@ -1,34 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 /**
-  * times_table - multiplicas
+  * print_numbers - impime los 9 numeros menos 2 y 4
   *
   * Return: void
   */
-void times_table(void)
+void print_numbers(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		if (i != 50 && i != 52)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
-			{
-				putchar(' ');
+			_putchar(i);
 		}
-			else
-			{
-				putchar((c / 10) + '0');
-			}
-			putchar((c % 10) + '0');
-		}
-		putchar('\n');
 	}
+	_putchar('\n');
 }
