@@ -1,34 +1,23 @@
 #include "main.h"
-#include <stdio.h>
 /**
-  * times_table - multiplicas
-  *
+  * print_line - draws a straight line in the terminal
+  * @n: el numero de lineas
   * Return: void
   */
-void times_table(void)
+void print_line(int n)
 {
-	int a;
-	int b;
-	int c;
+	int i;
 
-	for (a = 0; a <= 9; a++)
+	if (n > 0)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		for (i = 0; i < n; i++)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
-			{
-				putchar(' ');
+			_tchar('_');
 		}
-			else
-			{
-				putchar((c / 10) + '0');
-			}
-			putchar((c % 10) + '0');
-		}
-		putchar('\n');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
