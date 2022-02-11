@@ -27,6 +27,5 @@ void more_numbers(void)
 			c++;
 		}
 		_putchar('\n');
-		int c = 48;
 	}
 }
