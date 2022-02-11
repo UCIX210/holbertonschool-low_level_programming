@@ -1,34 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 /**
-  * times_table - multiplicas
+  * print_diagonal - draws a diagonal line on the termina
   *
   * Return: void
   */
-void times_table(void)
+void print_diagonal(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
+	int l;
 
-	for (a = 0; a <= 9; a++)
+	if (n > 0)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		for (i = 0; i < n; i++)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
+			for (l = 0; l != i; l++)
 			{
-				putchar(' ');
-		}
-			else
-			{
-				putchar((c / 10) + '0');
+				_putchar(' ');
 			}
-			putchar((c % 10) + '0');
+			_putchar(92);
+			_putchar('\n');
 		}
-		putchar('\n');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
