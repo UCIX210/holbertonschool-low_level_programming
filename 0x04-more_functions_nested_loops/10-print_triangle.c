@@ -1,17 +1,32 @@
 #include "main.h"
 /**
- * _islower - minuscula
- * @c: variable a chequear
- * Return: 0 == Mayuscula 1==minuscula
- */
-int _islower(int c)
+  * print_triangle - prints Triangles
+  * @size: espacios nuemros
+  * Return: void
+  */
+void print_triangle(int size)
 {
-	if (c >= 'a' && c <= 'z')
+	int draw;
+	int space;
+	int height;
+
+	if (size > 0)
 	{
-		return (1);
+		for (height = 1; height <= size ; height++)
+		{
+			for (space = 0; space < (size - height); space++)
+			{
+				_putchar('.');
+			}
+			for (draw = 0; draw < height; draw++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 	else
 	{
-		return (0);
+		_putchar('\n');
 	}
 }
