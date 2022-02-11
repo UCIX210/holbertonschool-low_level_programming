@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * print_numbers - impime los 9 numeros menos 2 y 4
+  * print_most_numbers - impime los 9 numeros menos 2 y 4
   *
   * Return: void
   */
