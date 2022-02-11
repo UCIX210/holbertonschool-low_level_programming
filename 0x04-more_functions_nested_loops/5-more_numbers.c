@@ -1,34 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 /**
-  * times_table - multiplicas
+  * more_numbers - prints 10 times the numbers, from 0 to 14
   *
   * Return: void
   */
-void times_table(void)
+void more_numbers(void)
 {
-	int a;
-	int b;
+    int i;
 	int c;
+	int l;
 
-	for (a = 0; a <= 9; a++)
+	for (l = 0; l < 10; l++)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		c = 48;
+		for (i = 0; i < 15; i++)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
+			if (i == 10)
 			{
-				putchar(' ');
-		}
-			else
-			{
-				putchar((c / 10) + '0');
+				c=48;
 			}
-			putchar((c % 10) + '0');
+			if (i>9)
+			{
+				_putchar('1');
+			}
+			_putchar(c);
+			c++;
 		}
-		putchar('\n');
+		_putchar('\n');
+		int c = 48;
 	}
 }
