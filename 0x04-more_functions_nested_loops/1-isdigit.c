@@ -2,7 +2,7 @@
 /**
  * _isdigit - Devuleve 1 si es digito
  * @c: variable a chequear
- * Return: 1 == Digito 
+ * Return: 1 == Digito
  */
 int _isdigit(int c)
 {
