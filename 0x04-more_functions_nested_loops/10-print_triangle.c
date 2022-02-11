@@ -16,7 +16,7 @@ void print_triangle(int size)
 		{
 			for (space = 0; space < (size - height); space++)
 			{
-				_putchar('.');
+				_putchar(' ');
 			}
 			for (draw = 0; draw < height; draw++)
 			{
