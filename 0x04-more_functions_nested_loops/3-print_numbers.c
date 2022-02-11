@@ -1,34 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
-  * times_table - multiplicas
+  * print_numbers - impime los 9 numeros
   *
   * Return: void
   */
-void times_table(void)
+void print_numbers(void)
 {
-	int a;
-	int b;
-	int c;
+	char i;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
-		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
-			{
-				putchar(' ');
-		}
-			else
-			{
-				putchar((c / 10) + '0');
-			}
-			putchar((c % 10) + '0');
-		}
-		putchar('\n');
+		_putchar(i);
 	}
+	_putchar('\n');
 }
