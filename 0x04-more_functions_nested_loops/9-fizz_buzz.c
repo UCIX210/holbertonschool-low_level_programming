@@ -4,7 +4,7 @@
   *
   * Return: void
   */
-void main(void)
+int main()
 {
 	int i;
 
@@ -28,4 +28,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return(0);
 }
