@@ -1,34 +1,31 @@
-#include "main.h"
 #include <stdio.h>
 /**
-  * times_table - multiplicas
+  * main - Fizz-Buzz
   *
   * Return: void
   */
-void times_table(void)
+void main(void)
 {
-	int a;
-	int b;
-	int c;
+	int i;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 1; i < 101; i++)
 	{
-		putchar('0');
-		for (b = 1; b <= 9; b++)
+		if (i % 3 == 0)
 		{
-			c = a * b;
-			putchar(',');
-			putchar(' ');
-			if (c <= 9)
-			{
-				putchar(' ');
+			printf("Fizz");
 		}
-			else
-			{
-				putchar((c / 10) + '0');
-			}
-			putchar((c % 10) + '0');
+		if (i % 5 == 0)
+		{
+			printf("Buzz");
 		}
-		putchar('\n');
+		if ((i % 3 != 0) && (i % 5 != 0))
+		{
+			printf("%d", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
+		}
 	}
+	printf("\n");
 }
