@@ -16,7 +16,7 @@ void rev_string(char *s)
 		i++;
 	}
 	o = i - 1;
-	for (l; l < i / 2; l++)
+	for (l; l < i ; l++)
 	{
 		a = s[l];
 		s[l] = s[j];
