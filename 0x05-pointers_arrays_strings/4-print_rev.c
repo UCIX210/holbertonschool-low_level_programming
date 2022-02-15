@@ -14,9 +14,10 @@ void print_rev(char *s)
 		i++;
 	}
 	o = i - 1;
-	for (o; s[i] != 0; o--)
+	while (o >= 0)
 	{
 		_putchar(s[o]);
+		o--;
 	}
 	_putchar('\n');
 }
