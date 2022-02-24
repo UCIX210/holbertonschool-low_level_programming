@@ -1,38 +1,34 @@
 #include "main.h"
-
 /**
- * square_root - find the natural square root of a number
- * @i: number
- * @j: incrementor
+ * square_root - funcion verdadera ya que no pude hacerlo en una sola funcion
+ * @x: numero a probar la funcion
+ * @n: variable a testear
  *
- * Return: the number found
+ * Return: raiz
  */
-
-int square_root(int i, int j)
+int square_root(int x, int n)
 {
-	if (i * i == j)
+	if (x * x == n)
 	{
-		return (i);
+		return (x);
 	}
-	else if (i * i > j)
+	if (x * x > n)
 	{
 		return (-1);
 	}
-	else
-	{
-		return (square_root(i + 1, j));
-	}
+	return (square_root(x + 1, n));
 }
 
 /**
- * _sqrt_recursion - returns natrual prime number
- * @n: number
- * Return: Square root or -1 if not onez
+ * _sqrt_recursion - retorna raiz a main y llama a la verdedera funcion
+ * @n: variable a testear
+ * Return: raiz
  */
 
 int _sqrt_recursion(int n)
 {
-	int a = 1;
+	int x;
 
-	return (square_root(a, n));
+	x = 1;
+	return (square_root(x, n));
 }
