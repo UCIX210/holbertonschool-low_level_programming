@@ -1,19 +1,19 @@
 #include "main.h"
-
 /**
- * _pow_recursion - find value of num^exp recursively
- * @num: number
- * @exp: exponent
- * Return: cumulative multiplication of 'num' 'exp' times
+ * _pow_recursion - returns the value of x raised to the power of y.
+ * @x: number
+ * @y: exponente
+ * Return: power
  */
-int _pow_recursion(int num, int exp)
+int _pow_recursion(int x, int y)
 {
-	if (exp < 0)
+	if (y < 0)
+	{
 		return (-1);
-	if (exp == 0)
+	}
+	if (y == 0)
+	{
 		return (1);
-	if (exp > 0)
-		return (num * _pow_recursion(num, exp - 1));
-
-	return (num);
+	}
+	return (x * _pow_recursion(x, y - 1));
 }
