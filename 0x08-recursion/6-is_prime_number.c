@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * find_prime- determines if prime
- * @n: input variable
- * @x: test number
- * Return: 1 prime | 0 not prime
+ * primo- Es primo?
+ * @n: varible a testear
+ * @x: numero a divdir para ver si es devisor de n
+ * Return: 1  or 0
  */
-int find_prime(int n, int x)
+int primo(int n, int x)
 {
 	if (x == n)
 	{
@@ -15,12 +15,12 @@ int find_prime(int n, int x)
 	{
 		return (0);
 	}
-		return (find_prime(n, x + 1));
+		return (primo(n, x + 1));
 }
 /**
- * is_prime_number- calculates if num is prime
- * @n: input
- * Return: 1 prime | 0 not prime
+ * is_prime_number- llama a la verdadera funcion y descarta 0 y 1
+ * @n: varible a testear
+ * Return: 1 or 0
  */
 int is_prime_number(int n)
 {
@@ -30,5 +30,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (find_prime(n, x));
+	return (primo(n, x));
 }
