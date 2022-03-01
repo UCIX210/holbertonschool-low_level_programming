@@ -10,11 +10,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int answer;
+	int a;
 		if (argc == 3)
-		{	
-			answer = atoi(argv[1]) * atoi(argv[2]);
-			printf("%d\n", answer);
+		{
+			a = atoi(argv[1]) * atoi(argv[2]);
+			printf("%d\n", a);
 			return (0);
 		}
 		else
@@ -22,5 +22,4 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-
 }
