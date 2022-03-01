@@ -9,13 +9,17 @@
  */
 int main(int argc, char *argv[])
 {
+	int a;
+	int b;
+	int ab;
+
 	if (argc == 3)
 	{
-		int a = atoi(argv[1]);
-		int b = atoi(argv[2]);
-		int c = a * b;
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		ab = a * b;
 
-		printf("%d \n", c);
+		printf("%d \n", ab);
 	}
 	else
 	{
