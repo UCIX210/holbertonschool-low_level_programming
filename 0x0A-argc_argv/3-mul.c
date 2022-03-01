@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 	{
 		ab = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d \n", ab);
+		return (0);
 	}
 	else
 	{
