@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the multiplication answer on a new line
  * @argc: argc = answer
@@ -9,17 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int ab;
+	int answer;
+		if (argc == 3)
+		{	answer = atoi(argv[1]) * atoi(argv[2]);
+				printf("%d\n", answer);
+				return (0);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 
-	if (argc == 3)
-	{
-		ab = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d \n", ab);
-		return (0);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
 }
