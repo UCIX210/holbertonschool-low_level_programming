@@ -11,9 +11,10 @@
 int main(int argc, char *argv[])
 {
 	int a;
+	int b = atoi(argv[1]);
 		if (argc == 3)
 		{
-			a = atoi(argv[1]) * atoi(argv[2]);
+			a = b * atoi(argv[2]);
 			printf("%d\n", a);
 			return (0);
 		}
