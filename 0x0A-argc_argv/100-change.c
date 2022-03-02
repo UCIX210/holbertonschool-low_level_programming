@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 				cents++;
 			}
 		}
-		printf("%i\n", cents);
+		printf("%d\n", cents);
 	}
 	else
 	{
