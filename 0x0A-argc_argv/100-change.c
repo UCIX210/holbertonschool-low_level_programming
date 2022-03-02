@@ -8,25 +8,24 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int coin = 0;
-	int sum = 0;
-	int arr[] = {25, 10, 5, 2, 1};
-
-	if (argc != 2)
+	if (argc == 2)
 	{
-		printf("Error\n");
-		return (1);
-	}
+		int coins[5] = {25, 10, 5, 2, 1};
+		int num = atoi(argv[1]), sum = 0, i;
 
-	for (i = 0; arr[i] != '\0'; i++)
-	{
-		while (sum + arr[i] <= atoi(argv[1]))
+		if (num < 0)
+			printf("0\n");
+		else
 		{
-			sum += arr[i];
-			coin++;
+			for (i = 0; i <= 4; i++)
+			{
+				sum += num / coins[i];
+				num = num % coins[i];
+			}
+			printf("%d\n", sum);
 		}
+		return (0);
 	}
-	printf("%i\n", coin);
-	return (0);
+	printf("Error\n");
+	return (1);
 }
