@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - min number of cambio change
+ * main - min number of coin change
  * @argc: argv length
- * @argv: centavos
+ * @argv: array
  * Return: 1 or 0
  */
 int main(int argc, char *argv[])
 {
 	int i;
-	int cambio = 0;
-	int suma = 0;
-	int centavos[] = {25, 10, 5, 2, 1};
+	int coin = 0;
+	int sum = 0;
+	int arr[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -19,14 +19,14 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	for (i = 0; centavos[i] != '\0'; i++)
+	for (i = 0; arr[i] != '\0'; i++)
 	{
-		while (suma + centavos[i] <= atoi(argv[1]))
+		while (sum + arr[i] <= atoi(argv[1]))
 		{
-			suma += centavos[i];
-			cambio++;
+			sum += arr[i];
+			coin++;
 		}
 	}
-	printf("%d\n", cambio);
+	printf("%i\n", coin);
 	return (0);
 }
