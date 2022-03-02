@@ -1,42 +1,39 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * argstostr - check the code
- * @ac: parameter
- * @av: parameter
- * Return: Always 0.
+ *argstostr - concatinate strings into a single one.
+ *@ac: number of arguments.
+ *@av: pointer to arguments vector.
+ *Return: pointer to string.
  */
+
 char *argstostr(int ac, char **av)
 {
-	char *ptr;
-	int i, j, k = 0, l = 0;
+	char *str;
+	int i, j, T_length = 0;
 
-	if (ac == 0 || av == NULL)
-	{
+	if (av == NULL || ac == 0)
 		return (NULL);
-	}
+
+	for (i = 0; i < ac; i++)
+		for (j = 0; av[i][j]; j++)
+			T_length++;
+
+	str = malloc(sizeof(char) * T_length + ac + 1);
+	if (str == NULL)
+		return (NULL);
+	T_length = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j]; j++)
 		{
-			l++;
+			str[T_length] = av[i][j];
+			T_length++;
 		}
+		str[T_length] = '\n';
+		T_length++;
 	}
-	ptr = (char *) malloc(sizeof(char) * l + 10);
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; i < ac; i++)
-	{
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			ptr[k] = av[i][j];
-			k++;
-		}
-		ptr[k] = '\n';
-		k++;
-	}
-	ptr[k] = '\0';
-	return (ptr);
+	str[T_length] = '\0';
+	return (str);
 }
