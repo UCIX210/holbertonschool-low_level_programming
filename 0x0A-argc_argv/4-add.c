@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int o;
-	int sum;
+	int suma;
 
 	if (argc > 1)
 	{
@@ -26,14 +26,14 @@ int main(int argc, char *argv[])
 					return (1);
 				}
 			}
-			sum = sum + atoi(argv[i]);
+			suma = suma + atoi(argv[i]);
 		}
-		printf("%d\n", sum);
+		printf("%d\n", suma);
 	}
 	else
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 	return (0);
 }
