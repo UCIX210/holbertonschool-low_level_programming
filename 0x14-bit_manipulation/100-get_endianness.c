@@ -1,7 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * get_endianness - find the endianess of a system
- * Return: 1 if little endian, 0 if big endian
+ * get_endianness - función que comprueba el endianness
+ * Return: 0 si es big endian, 1 si es little endian
  */
 int get_endianness(void)
 {
