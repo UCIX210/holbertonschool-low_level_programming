@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_bit - Write a function that returns the number of bits you would need to flip to get from one number to another.
+ * set_bit - function that returns the number of bits
  * @n: el valor para establecer el bit en index
  * @index: el índice del bit a establecer
  * Return: 1 si funcionó, o -1 si ocurrió un error
