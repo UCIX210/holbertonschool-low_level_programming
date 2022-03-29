@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * main - copy text from one file to another
  * @argc: the number of arguments passed the function
